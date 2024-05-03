@@ -47,6 +47,7 @@ const state = {
           </div>
           </div>
     </div>`;
+        
       earning += isCredit ? amount : 0;
       expense += !isCredit ? amount : 0;
       net = earning - expense;
@@ -107,7 +108,6 @@ const state = {
   
   const handleUpdate = (id) => {
     const transaction = state.transactions.find((t) => t.id === id);
-  
     const { text, amount } = transaction;
     const textInput = document.getElementById("text");
     const amountInput = document.getElementById("amount");
