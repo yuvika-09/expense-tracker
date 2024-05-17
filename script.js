@@ -4,6 +4,7 @@ const state = {
     net: 0,
     transactions: [],
   };
+
   
   let isUpdate = false;
   let tid;
